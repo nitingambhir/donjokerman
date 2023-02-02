@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>donjokerman</title>
+  <link href="styleM.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body id="operations">
+      <!--Navigation Bar #FFFFFF #000000 #CEDFFF #6573EC-->
+    <div class="navbar">
+        <div class="leftNav">
+            <a href="main.html"><p class="logo">Don Jokerman</p></a>
+            <ul class="links">
+                <li class="ma"><a href="main.html">Dashboard</a></li>
+                <li class="m"><a href="members.html">Members</a></li>
+                <li class="op"><a href="operations.html">Operations</a></li>
+                <li class="lo"><a href="loans.html">Chat</a></li>            
+            </ul>
+        </div>
+        <div class="rightNav">
+            <span class="material-symbols-outlined">person</span>   
+            <a href="#"><p class="login">Don Jokerman</p></a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div style="width:100%;background-color:#1D1B1D;height:30pt;font-size:0.75em;justify-content: center;padding:10pt;align-items: center;text-align: center;border-radius: 10pt;">New Operation</div>
+        <p style="background-color: #131313;margin-top:20pt;color:red;">Name</p>
+        <input type="text" value="" style="width:85%;height:30pt;border-radius: 10pt;margin-top:10pt;">
+        <input type="date" id="start" name="trip-start"
+       value="2022-11-17"
+       min="2018-01-01" max="2023-12-31" style="width:85%;height:30pt;border-radius: 10pt;margin-top:10pt;text-align:center;background-color: whitesmoke;color:black">
+
+            <input type="time" id="appt" name="appt" style="width:85%;height:30pt;border-radius: 10pt;margin-top:10pt;text-align:center;background-color: whitesmoke;color:black;margin-top:10pt;"><br><br><br><br>
+            <input type="checkbox" style="margin-right:20pt;"><label style="background-color: #131313;">Notify All Members</label>
+            <br><br>
+            <input type="checkbox" style="margin-right:20pt;"><label style="background-color: #131313;">Schedule Meeting</label>
+            <hr>
+            <button style="background-color: red;color:white;margin-top:20pt;width:100%;height:30pt;border:none;border-radius:10pt;" onclick="alert('Message broadcast Successful')">Launch</button>
+    </div>
+
+    <div class="mainbar">
+        <div style="display: flex;justify-content: space-around;padding:0;height:75pt;align-items: center;background-color: #131313;">
+            <p style="background-color: #131313;font-size: 1.5em;">Operations</p>
+            <p style="background-color: #131313;font-size: 1.5em;">Status</p>            
+            <p style="background-color: #131313;font-size: 1.5em;">Details</p>
+        </div>
+
+        <div style="display: flex;justify-content: space-around;padding:0;height:75pt;align-items: center;background-color: #1D1B1D;border-radius: 10pt;margin-bottom:10pt;">
+            <p style="background-color: #1D1B1D;font-size: 1em;">Bank Robbery</p>
+            <p style="background-color: #1D1B1D;font-size: 1em;color:red">Completed</p>            
+            <p style="background-color: #1D1B1D;font-size: 1em;">DPS Dwarka</p>
+        </div>
+
+        <div style="display: flex;justify-content: space-around;padding:0;height:75pt;align-items: center;background-color: #1D1B1D;border-radius: 10pt;margin-bottom:10pt;">
+            <p style="background-color: #1D1B1D;font-size: 1em;">Cash Dealing</p>
+            <p style="background-color: #1D1B1D;font-size: 1em;color:red">In-progress</p>            
+            <p style="background-color: #1D1B1D;font-size: 1em;">DPS Dwarka</p>
+        </div>
+
+                <div style="display: flex;justify-content: space-around;padding:0;height:75pt;align-items: center;background-color: #1D1B1D;border-radius: 10pt;margin-bottom:10pt;">
+            <p style="background-color: #1D1B1D;font-size: 1em;">Exun Raid</p>
+            <p style="background-color: #1D1B1D;font-size: 1em;color:red">Completed</p>            
+            <p style="background-color: #1D1B1D;font-size: 1em;">DPS Dwarka</p>
+        </div>
+
+        <div style="display: flex;justify-content: space-around;padding:0;height:75pt;align-items: center;background-color: #1D1B1D;border-radius: 10pt;margin-bottom:10pt;">
+            <p style="background-color: #1D1B1D;font-size: 1em;">CW Raid</p>
+            <p style="background-color: #1D1B1D;font-size: 1em;color:red">Upcoming</p>            
+            <p style="background-color: #1D1B1D;font-size: 1em;">DPS Dwarka</p>
+        </div>
+    </div>
+
+
+
+
+
+<div>
+
+
+
+  <script src="scriptM.js"></script>
+</body>
+</html>

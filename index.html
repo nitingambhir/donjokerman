@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>donjokerman</title>
+  <link href="styleI.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <img src="ticket.png" style='width:40px;position:absolute;right:0%;top:0%' onclick="openForm();">
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+        <h1>Login</h1>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" id ="un" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="ps" placeholder="Enter Password" name="psw" required>
+        <input type="button" id="signin" value="Login" onclick="encryption();">
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+  <div id='errormessage'>
+    <div style='width:72px;height:72px;'>
+      <img src='error.png' width=100%>
+    </div>
+    <h1 id='message1'>This site can't be reached</h1>
+    <p id='message2'>Check if there is a typo in www.donjokerman.com</p>
+    <p id='message3'>If the spelling is correct, <span>try running the Windows Network Diagnostics.</span></p>
+    <p id='message4'>DNS_PROBE_FINISHED_NXDOMAIN</p>
+    <button onclick="location.reload();">Reload</button>
+  </div>
+
+<script src="scriptI.js"></script>
+</body>
+</html>
